@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity</title>
+
+  <style>
+  body {
+    width: 70%;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: grey;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+  <button onclick="console.log(`Cart Quantity: ${cartQuantity}`);">Show Quantity</button>
+  <button onclick="cartQuantity = cartQuantity + 1; console.log(`Cart Quantity: ${cartQuantity}`)">Add to Cart</button>
+  <button onclick="cartQuantity = cartQuantity + 2; console.log(`Cart Quantity: ${cartQuantity}`)">+2</button>
+  <button  onclick="cartQuantity = cartQuantity + 3; console.log(`Cart Quantity: ${cartQuantity}`)">+3</button>
+  <button onclick="cartQuantity = cartQuantity = 0; console.log(` cart was reset. \n cart Quantity: ${cartQuantity}`)">Reset Cart</button>
+
+
+  <script>
+
+    let cartQuantity = 0;
+
+    //re-assining methods but same purpose:
+    cartQuantity = cartQuantity + 1; // + 1
+    cartQuantity =+ 1; // + 1 
+    cartQuantity ++; // + 1 or increment
+
+  </script>
+</body>
+</html>
